@@ -1,0 +1,114 @@
+.body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.left{
+    width: 46%;
+    height: 100%;
+    /* background-color: rebeccapurple; */
+    display: reverse;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.l1{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+.l2{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+.l3{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+.l4{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+} 
+
+.center{
+    width: 8%;
+    height: 100%;
+    /* background-color: orange; */
+    display: reverse;
+    justify-content: center;
+    align-items: center;
+}
+.radio{
+    position: relative;
+    margin-left: 60px;
+}
+.c1{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 35%;
+}
+
+
+.right{
+    width: 46%;
+    height: 100%;
+    /* background-color: red; */
+    display: reverse;
+    justify-content: flex-start;
+    align-items: center;
+}
+/* .r1{
+    display: reverse;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-top: 0px;
+    margin-left: 100px;
+}
+.r2{
+    display: reverse;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-top: 70px;
+    margin-left: 110px;
+}
+.r3{
+    display: reverse;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-top: 125px;
+    margin-left: 90px;
+}
+.r4{
+    display: reverse;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-top: 145px;
+    margin-left: 60px;
+} */
+.navi{
+    background-color: green;
+    width: 150px;
+    height: 40px;
+    border-radius: 20px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.navi:hover{
+    width: 180px;
+    height: 50px;
+    border-radius: 25px; 
+    color: white;      
+}
+

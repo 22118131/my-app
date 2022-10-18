@@ -1,0 +1,121 @@
+body{
+    text-align: center;
+    background-color: rgb(204, 204, 207);
+    
+}
+form{
+ height: 500px;
+ width: 400;
+ margin-left: auto;
+ margin-right: auto;
+ background-color: aliceblue;
+ text-align: center;
+ border-radius: 10px;
+ 
+}
+
+button{
+ height: 30px;
+ width: 195px;
+ border: none;
+ margin-bottom: 30px;
+
+}
+button.bb{
+ height: 30px;
+ width: 195px;
+ background-color: rgb(198, 198, 198);
+
+}
+
+.aa{
+ background: rgb(179, 179, 179);
+}
+input{
+                 background-color: rgb(254, 254, 254);
+                 width: 300px; 
+                 border-radius: 5px;  
+                 border: solid rgb(216, 213, 207);  
+                 margin: 5px;
+                 padding: 10px;
+}
+
+.cc{
+  margin-left: -90px;
+  display: block;
+
+}
+
+.gg{
+ margin-left: -100px;
+}
+
+.cat{
+                 color: rgb(255, 255, 255);
+                 background-color: green;
+                 text-align: center;
+                 width: 150px; 
+                 border-radius: 5px;  
+                 border: solid rgb(216, 213, 207);  
+                 margin: 10px;
+                 padding: 5x;
+         }
+.cata{
+                 color: rgb(255, 255, 255);
+                 background-color: rgb(85, 49, 163);
+                 text-align: center;
+                 width: 150px; 
+                 border-radius: 5px;  
+                 border: solid rgb(216, 213, 207);  
+                 margin: 12px;
+                 padding: 5px;
+         } 
+.catb{
+                 color: rgb(255, 255, 255);
+                 background-color: rgb(32, 10, 84);
+                 text-align: center;
+                 width: 150px; 
+                 border-radius: 5px;  
+                 border: solid rgb(216, 213, 207);  
+                 margin: 10px;
+                 padding: 5px;
+         } 
+.catc{
+                 color: rgb(255, 255, 255);
+                 background-color: rgb(37, 34, 44);
+                 text-align: center;
+                 width: 150px; 
+                 border-radius: 5px;  
+                 border: solid rgb(216, 213, 207);  
+                 margin: 10px;
+                 padding: 5px;
+         }           
+.bat{
+                 color: rgb(255, 255, 255);
+                 background-color: rgb(12, 220, 12);
+                 text-align: unset;
+                 width: 320px; 
+                 border-radius: 5px;  
+                 border: solid rgb(216, 213, 207);  
+                 margin: 10px;
+                 padding: 5px;
+         }
+.b{
+ text-align: center;
+}
+.navi{
+        background-color: green;
+        width: 150px;
+        height: 40px;
+        border-radius: 20px; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+}
+.navi:hover{
+        width: 180px;
+        height: 50px;
+        border-radius: 25px; 
+        color: white;      
+}

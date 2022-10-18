@@ -1,0 +1,16 @@
+.navi{
+    background-color: green;
+    width: 150px;
+    height: 40px;
+    border-radius: 20px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.navi:hover{
+    width: 180px;
+    height: 50px;
+    border-radius: 25px; 
+    color: white;      
+}

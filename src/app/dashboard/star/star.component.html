@@ -1,0 +1,49 @@
+<p>star works!</p>
+
+<!-- using redio button to select -->
+
+<label>Stars</label>
+
+<input type="radio" name="Stars" value="star1" [(ngModel)]="stars">
+<label>star 1</label>
+
+<input type="radio" name="Stars" value="star2" [(ngModel)]="stars">
+<label>star 2</label>
+
+<input type="radio" name="Stars" value="star3" [(ngModel)]="stars">
+<label>star 3</label>
+
+<input type="radio" name="Stars" value="star4" [(ngModel)]="stars">
+<label>star 4</label>
+
+<input type="radio" name="Stars" value="star5" [(ngModel)]="stars">
+<label>star 5</label><br>
+
+<div class="img1">
+<img *ngIf="stars=='star1'" src="/assets/star1.jpeg"><br>
+<img *ngIf="stars=='star2'" src="/assets/star2.jpeg"><br>
+<img *ngIf="stars=='star3'" src="/assets/star3.jpeg"><br>
+<img *ngIf="stars=='star4'" src="/assets/star4.jpeg"><br>
+<img *ngIf="stars=='star5'" src="/assets/star5.jpeg"><br>
+</div>
+
+<!-- using select option  -->
+<label> Rating </label>
+<select [(ngModel)]="rating">
+    <option> 1 </option>
+    <option> 2 </option>
+    <option> 3 </option>
+    <option> 4 </option>
+    <option> 5 </option>
+</select>
+
+<img *ngIf="rating==1" src="/assets/star1.jpeg"><br>
+<img *ngIf="rating==2" src="/assets/star2.jpeg"><br>
+<img *ngIf="rating==3" src="/assets/star3.jpeg"><br>
+<img *ngIf="rating==4" src="/assets/star4.jpeg"><br>
+<img *ngIf="rating==5" src="/assets/star5.jpeg"><br>
+
+
+
+
+
