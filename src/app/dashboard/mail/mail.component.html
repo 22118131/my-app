@@ -1,0 +1,25 @@
+<p>mail works!</p>
+
+<table class="table table-white tab">
+    <thead>
+        <tr class="head">
+            <th> Select </th>
+            <th> Stared </th>
+            <th> UserId </th>
+            <th> Id </th>
+            <th> Title </th>
+            <th> Completed </th>
+        </tr>
+    </thead>
+
+    <tbody>
+         <tr *ngFor="let mail of mail" [ngClass]="{'visited': mail.completed==true, 'unvisited': mail.completed ==false}">
+           <td> <input type="checkbox">  </td>
+           <td class="star"> ⭐  </td>
+           <td> {{mail.userId }} </td>
+           <td> {{mail.id}} </td>
+           <td> {{mail.title}} </td>
+           <td> {{mail.completed}} </td>
+         </tr>
+    </tbody>
+</table>

@@ -1,4 +1,4 @@
-<body>
+<!-- <body>
         <div class="navi" routerLink="/pagenotfound"> Page not Found</div>
         <b>Please Login To Continue</b>
         
@@ -22,4 +22,21 @@
        <div>
        
 </div>
-    </body>
+    </body> -->
+
+    <div class="Parent">
+        <div class="child">
+                <form [formGroup] = "loginForm">
+                        <label> Email </label>
+                        <input type="text" formControlName="email"> 
+                        <br>
+
+                        <label> Password </label>
+                        <input type="text" formControlName="email"> 
+                        <br>
+
+                        
+                        <button (click)="login()" class="btn-primary">Login<button></button></button>
+                </form>
+        </div>
+    </div>

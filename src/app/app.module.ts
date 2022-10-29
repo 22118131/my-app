@@ -10,7 +10,7 @@ import { CalculatorComponent } from './dashboard/calculator/calculator.component
 import { InterpolationComponent } from './dashboard/interpolation/interpolation.component';
 import { EventBindingComponent } from './dashboard/event-binding/event-binding.component';
 import { TwoWayBindingComponent } from './dashboard/two-way-binding/two-way-binding.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RectangleComponent } from './dashboard/rectangle/rectangle.component';
 import { SquareComponent } from './dashboard/square/square.component';
 import { PowerComponent } from './dashboard/power/power.component';
@@ -25,8 +25,14 @@ import { PercentagePipe } from './percentage.pipe';
 import { CarsComponent } from './dashboard/cars/cars.component';
 import { StarComponent } from './dashboard/star/star.component';
 import { TaskComponent } from './task/task.component';
-import { GpayComponent } from './gpay/gpay.component';
+import { GpayComponent } from './dashboard/gpay/gpay.component';
 import { BankComponent } from './dashboard/bank/bank.component';
+import {HttpClientModule} from '@angular/common/http';
+import { VehicleComponent } from './dashboard/vehicle/vehicle.component';
+import { PostsComponent } from './dashboard/posts/posts.component';
+import { FlipkartComponent } from './dashboard/flipkart/flipkart.component';
+import { MailComponent } from './dashboard/mail/mail.component'
+
 
 @NgModule({
   declarations: [
@@ -53,12 +59,18 @@ import { BankComponent } from './dashboard/bank/bank.component';
     StarComponent,
     TaskComponent,
     GpayComponent,
-    BankComponent
+    BankComponent,
+    VehicleComponent,
+    PostsComponent,
+    FlipkartComponent,
+    MailComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

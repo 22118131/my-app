@@ -4,12 +4,13 @@ import { Injectable } from '@angular/core';
 @Injectable({
   providedIn: 'root'
 })
-export class BankService {
+export class PostsService {
 
   constructor(private _httpClient:HttpClient) { }
 
-  getAccount(){
-    return this._httpClient.get("https://6128991386a213001729f9df.mockapi.io/test/v1/principals");
+  getPosts(){
+    return this._httpClient.get("https://jsonplaceholder.typicode.com/posts");
   }
+
 
 }

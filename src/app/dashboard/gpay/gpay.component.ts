@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HdfcService } from '../hdfc.service';
+import { HdfcService } from '../../hdfc.service';
 
 @Component({
   selector: 'app-gpay',

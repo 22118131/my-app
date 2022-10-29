@@ -14,15 +14,16 @@
     
     
 }
-.left > h2{
+.left > h6{
     cursor: pointer;
+
 }
-.left > h2:hover{
+.left > h6:hover{
     background-color: white;
     color: red;
 }
 .right{
-    height: 100vh;
+    height: 100%;
     width: 80%;
     background-image: url(https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZnJhbmNlfGVufDB8fDB8fA%3D%3D&w=1000&q=80);
     background-size: cover;

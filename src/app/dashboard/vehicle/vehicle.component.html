@@ -1,0 +1,21 @@
+<p>vehicle works!</p>
+
+<table border="1">
+    <thead>
+          
+    </thead>
+    <tbody>
+        <tr *ngFor="let vehicle of vehicles">
+            <td> {{vehicle.Vehicle }} </td>
+            <td> {{vehicle.manufacturer }} </td>
+            <td> {{vehicle.model }} </td>
+            <td> {{vehicle.type }} </td>
+            <td> {{vehicle.color }} </td>
+            <td> {{vehicle.fuel }} </td>
+            <td> 
+                <img src="{{vehicle.image}}" width="100px" hight="100px">
+            </td>
+            <td> {{ vehicle.id}}</td>
+          </tr>
+    </tbody>
+    </table>

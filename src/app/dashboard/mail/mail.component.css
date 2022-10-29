@@ -1,0 +1,20 @@
+/* table{
+    
+    background-color: white;
+} */
+
+tr th:hover{
+    background-color: #837e79;
+}
+
+tr{
+    background-color: white;
+}
+
+tr:hover{
+    box-shadow: 0px 0px 15px #615e5b;
+    background-color: #a5a29b;
+    border-radius: 25%;
+    font-size: 20px;
+}
+

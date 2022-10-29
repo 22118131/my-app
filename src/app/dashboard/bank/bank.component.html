@@ -1,1 +1,19 @@
 <p>bank works!</p>
+
+<table border="2">
+<thead>
+      
+</thead>
+<tbody>
+    <tr *ngFor="let account of accounts">
+        <td> {{account.createdAt }} </td>
+        <td> {{account.account_name }} </td>
+        <td> {{account.available_balance }} </td>
+        <td> {{account.currency }} </td>
+        <td> 
+            <img src="{{account.user_image}}" width="100px" hight="100px">
+        </td>
+        <td> {{account.account_number }} </td>
+      </tr>
+</tbody>
+</table>

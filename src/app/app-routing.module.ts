@@ -18,13 +18,20 @@ import { PipesComponent } from './dashboard/pipes/pipes.component';
 import { CarsComponent } from './dashboard/cars/cars.component';
 import { StarComponent } from './dashboard/star/star.component';
 import { TaskComponent } from './task/task.component';
-import { GpayComponent } from './gpay/gpay.component';
+import { GpayComponent } from './dashboard/gpay/gpay.component';
 import { BankComponent } from './dashboard/bank/bank.component';
+import { VehicleComponent } from './dashboard/vehicle/vehicle.component';
+import { PostsComponent } from './dashboard/posts/posts.component';
+import { FlipkartComponent } from './dashboard/flipkart/flipkart.component';
+import { MailComponent } from './dashboard/mail/mail.component';
+import { AuthGuard } from './auth.guard';
+import { NotifyGuard } from './notify.guard';
+
 
 const routes: Routes = [ 
   {path:'login',component: LoginComponent},
   {path:'task',component: TaskComponent},
-  {path:'dashboard',component: DashboardComponent, children:[
+  {path:'dashboard',component: DashboardComponent, canActivate:[], children:[
     {path:'calculator',component: CalculatorComponent},
     {path:'event-binding',component: EventBindingComponent},
     {path:'interpolation',component: InterpolationComponent},
@@ -33,13 +40,17 @@ const routes: Routes = [
     {path:'square',component: SquareComponent},
     {path:'power',component: PowerComponent},
     {path:'eventregistration',component: EventregistrationComponent},
-    {path:'employeeregistration',component:EmployeeregistrationComponent},
+    {path:'employeeregistration',component:EmployeeregistrationComponent, canDeactivate:[NotifyGuard]},
     {path:'cart',component:CartComponent},
     {path:'pipes',component:PipesComponent},
-    {path:'cars',component:CarsComponent},
+    {path:'cars',component:CarsComponent}, 
     {path: 'star',component:StarComponent},
     {path: 'gpay',component:GpayComponent},
-    {path: 'bank',component:BankComponent}
+    {path: 'bank',component:BankComponent, canDeactivate:[NotifyGuard]},
+    {path: 'vehicle',component:VehicleComponent, canDeactivate:[NotifyGuard]},
+    {path: 'posts',component:PostsComponent},
+    {path: 'flipkart',component:FlipkartComponent},
+    {path: 'mail',component:MailComponent, canDeactivate:[NotifyGuard]}
   ]},
    {path:'',component: LoginComponent},
    {path:'**',component: PagenotfoundComponent},

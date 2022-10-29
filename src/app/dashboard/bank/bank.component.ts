@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BankService } from 'src/app/bank.service';
 
 @Component({
   selector: 'app-bank',
@@ -7,7 +8,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BankComponent implements OnInit {
 
-  constructor() { }
+  public accounts:any = [];
+
+  constructor(private _bankService:BankService) { 
+
+  this._bankService.getAccount().subscribe(
+      (data:any)=>{
+        this.accounts = data;
+      },
+      (err:any)=>{
+        alert("internal server error");
+      }
+
+    )
+
+  }
 
   ngOnInit(): void {
   }
